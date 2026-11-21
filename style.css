@@ -1,0 +1,63 @@
+/* -------------------------------
+Style configuration for pmlpelit
+------------------------------- */
+
+* {
+    font-family: sans-serif;
+}
+
+div#ShuffledWord  {
+    padding: 0.1em 2em;
+    margin-bottom: 1em;
+    background-color: rgb(171, 255, 255);
+    width: fit-content;
+    border: 2px solid rgb(106, 238, 255);
+    border-radius: 10px;
+}
+
+input#Answer {
+    width: 15em;
+    height: 2em;
+    font-size: larger;
+    padding: 0.2em;
+    padding-left: 0.5em;
+    border-radius: 10px;
+    border: solid 1px gray;
+    background-color: rgb(246, 246, 246);
+}
+
+div.content {
+    background-color: rgb(219, 251, 255);
+    padding: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1em;
+    border: solid 2px rgb(106, 238, 255);
+    border-radius: 10px;
+    width: 35em;
+}
+
+p.credit {
+    color: rgb(125, 125, 125);
+}
+
+p.credit a {
+    color: inherit;
+}
+
+@media(max-width: 600px) {
+    div.content {
+        width: 80%;
+        padding: 1.5em;
+    }
+
+    div#ShuffledWord {
+        width: auto;
+        overflow-x: scroll;
+    }
+
+    input#Answer {
+        width: auto;
+        overflow-x: scroll;
+    }
+}
