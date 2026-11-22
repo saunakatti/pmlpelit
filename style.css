@@ -160,7 +160,7 @@ button#theme-switch, a.homeButton {
 
 @media(max-width: 600px) {
     div.content {
-        width: 80%;
+        width: 100%;
         padding: 1.5em;
     }
 
