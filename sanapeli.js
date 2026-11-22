@@ -83,7 +83,7 @@ function submitAnswer(event) {
     tries = 3
     console.log("The player's answer was correct. Streak: " + streak);
 
-    feedbackField.innerHTML = `<h4 style="color: green;">Oikein. Streakkisi on ${streak}</h4>`
+    feedbackField.innerHTML = `<h4 style="color: var(--color-green);">Oikein. Streakkisi on ${streak}</h4>`
     document.getElementById("Form").reset();
     displayShuffledWord(words)
 
@@ -92,14 +92,14 @@ function submitAnswer(event) {
     streak = 0
     console.log("The player's answer was wrong. Game Over.")
 
-    feedbackField.innerHTML = `<h4 style="color: red;">Hävisit. Oikea sana oli <i>${word}</i></h4>`
+    feedbackField.innerHTML = `<h4 style="color: var(--color-red);">Hävisit. Oikea sana oli <i>${word}</i></h4>`
     document.getElementById("Form").reset();
     displayShuffledWord(words)
    } else if (tries > 0 && answer != word) {
     tries -= 1;
     console.log("The player's answer was wrong. Tries left: " + tries);
 
-    feedbackField.innerHTML = `<h4 style="color: red;">Väärin. Yrityksiä jäljellä: ${tries}</h4>`
+    feedbackField.innerHTML = `<h4 style="color: var(--color-red);">Väärin. Yrityksiä jäljellä: ${tries}</h4>`
    } else feedbackField.innerHTML = `<h4>Error: tries ${tries}, streak ${streak}, word ${word}, answer ${answer}</h4>`
 }
 

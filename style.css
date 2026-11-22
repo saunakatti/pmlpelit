@@ -9,6 +9,9 @@ Style configuration for pmlpelit
     --color-blue3: #dbfbff;
     --color-text: #000000;
     --color-graytext: #808080;
+
+    --color-green: green;
+    --color-red: red;
 }
 
 .darkmode {
@@ -18,6 +21,9 @@ Style configuration for pmlpelit
     --color-blue3: #536ba9;
     --color-text: #ffffff;
     --color-graytext: #c1c1c1;
+
+    --color-green: #3bff3b;
+    --color-red: #ff2828;
 }
 
 * {
