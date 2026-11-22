@@ -2,16 +2,52 @@
 Style configuration for pmlpelit
 ------------------------------- */
 
+:root {
+    --color-bg: #ffffff;
+    --color-blue: #6aeeff;
+    --color-blue2: #abffff;
+    --color-blue3: #dbfbff;
+    --color-text: #000000;
+    --color-graytext: #808080;
+}
+
+.darkmode {
+    --color-bg: #2a2a2a;
+    --color-blue: #364c7b;
+    --color-blue2: #495d9a;
+    --color-blue3: #536ba9;
+    --color-text: #ffffff;
+    --color-graytext: #c1c1c1;
+}
+
 * {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-bg);
     font-family: sans-serif;
+    color: var(--color-text);
+}
+
+button {
+    background-color: var(--color-blue2);
+    border-radius: 10px;
+    border: 1px solid var(--color-blue);
+    color: var(--color-text);
+}
+
+button:hover {
+    background-color: var(--color-blue);
 }
 
 div#ShuffledWord  {
     padding: 0.1em 2em;
     margin-bottom: 1em;
-    background-color: rgb(171, 255, 255);
+    background-color: var(--color-blue2);
     width: fit-content;
-    border: 2px solid rgb(106, 238, 255);
+    border: 2px solid var(--color-blue);
     border-radius: 10px;
 }
 
@@ -22,23 +58,23 @@ input#Answer {
     padding: 0.2em;
     padding-left: 0.5em;
     border-radius: 10px;
-    border: solid 1px gray;
+    border: solid 1px var(--color-graytext);
     background-color: rgb(246, 246, 246);
 }
 
 div.content {
-    background-color: rgb(219, 251, 255);
+    background-color: var(--color-blue3);
     padding: 2em;
     margin-right: auto;
     margin-left: auto;
     margin-top: 1em;
-    border: solid 2px rgb(106, 238, 255);
+    border: solid 2px var(--color-blue);
     border-radius: 10px;
     width: 35em;
 }
 
 p.credit {
-    color: rgb(125, 125, 125);
+    color: var(--color-graytext);
     overflow-x: scroll;
 }
 
@@ -67,17 +103,23 @@ button#HintButton {
 #Hint {
     font-style: italic;
     margin-left: 1em;
-    color: gray;
+    color: var(--color-graytext);
 }
 
 #ProjectInfo {
     margin-top: 1em;
-    color: gray;
+    color: var(--color-graytext);
 }
 
 #ProjectInfo a {
     text-decoration: underline;
-    color: gray;
+    color: var(--color-graytext);
+}
+
+button#theme-switch {
+    padding: 0.5em 0.6em;
+    font-size: 1em;
+    float: right;
 }
 
 

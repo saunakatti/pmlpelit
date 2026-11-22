@@ -112,3 +112,4 @@ function displayHint(clear = false) {
         hintContainer.innerHTML = `<span>${hint}<span>`
     }
 }
+
