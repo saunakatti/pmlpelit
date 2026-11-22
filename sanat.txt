@@ -15,7 +15,7 @@ Abicus: Funktiolaskin.
 Hansakortteli: Tääl voi sadepäivänäki kiertää kauppoi.
 Vernier: Tällä tehää kuvaajia taulukkotiedoista.
 CAS-laskin: Tällä voi ratkasta yhtälöi.
-MAOL-taulukot: Pelastaa kokeessa.
+MAOL-taulukot: Pelastaa joissain kokeissa.
 Koeviikko: Periodin päätteeksi.
 Lukiolaiskannettava: Pitkä nimitys lukioläppärille.
 Käytäväpiano: Propsit niille ketkä aina soittaa näitä.

@@ -172,7 +172,7 @@ button#theme-switch, a.homeButton {
     }
 
     input#Answer {
-        width: auto;
+        width: min(15em, 100%);
         overflow-x: scroll;
     }
 }

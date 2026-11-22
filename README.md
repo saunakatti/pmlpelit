@@ -13,4 +13,4 @@ Sanat ovat lukioaiheisia.
 
 ### (EN) Upper Secondary Word Game
 
-JavaScript game about words related to finnsish upper secondary education.
+JavaScript game about words related to Finnish upper secondary education.
