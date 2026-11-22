@@ -39,11 +39,37 @@ div.content {
 
 p.credit {
     color: rgb(125, 125, 125);
+    overflow-x: scroll;
 }
 
 p.credit a {
     color: inherit;
 }
+
+#WordCharacter {
+    font-size: 2em;
+    font-weight: 550;
+}
+
+div#HintLine {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.8em;
+    flex-wrap: wrap;
+}
+
+button#HintButton {
+    width: 5em;
+    height: 2em;
+}
+
+#Hint {
+    font-style: italic;
+    margin-left: 1em;
+    color: gray;
+}
+
+
 
 @media(max-width: 600px) {
     div.content {

@@ -1,6 +1,7 @@
 // Sanasotkupeli (mixed words game)
 // Made by Onni V (Saunakatti), no AI was used
 
+// Define array of words globally
 var words = ""
 
 // Fetch the word and hint list
@@ -34,7 +35,10 @@ function shuffleArray(a) {
 function displayShuffledWord(words) {
     const wordDisplay = document.getElementById("ShuffledWord")
     const randomRow = words[Math.floor(Math.random() * words.length)];
-    const rowArray = randomRow.split(":")
+    const rowArray = randomRow.split(": ")
+
+    displayHint(true)
+    wordDisplay.innerHTML = ""
 
     word = rowArray[0]
     hint = rowArray[1]
@@ -43,11 +47,16 @@ function displayShuffledWord(words) {
 
     shuffleArray(wordArray);
 
-    const shuffledWord = wordArray.join("");
-
-    if (wordDisplay) {
-        wordDisplay.innerHTML = `<h2>${shuffledWord}</h2>`
+    for (let i = 0; i < wordArray.length; i++) {
+        wordDisplay.innerHTML += `<span id=WordCharacter>${wordArray[i]}</span>`
     }
+
+    wordChars = document.querySelectorAll("#WordCharacter")
+    wordChars.forEach(element => {
+        if (element.innerHTML == " ") {
+            element.innerHTML = "_"
+        } else return
+    });
 }
 
 function submitAnswer(event) {
@@ -61,19 +70,37 @@ function submitAnswer(event) {
 
    const feedbackField = document.getElementById("Feedback");
 
-   if (answer == word && tries > 1) {
+   if (answer == word && tries > 0) {
     streak += 1;
+    tries = 3
     console.log("The player's answer was correct. Streak: " + streak);
 
-    feedbackField.innerHTML = `<h4 style="color: green;">Vastasit oikein. Streakkisi on ${streak}</h4>`
+    feedbackField.innerHTML = `<h4 style="color: green;">Oikein. Streakkisi on ${streak}</h4>`
     document.getElementById("Form").reset();
     displayShuffledWord(words)
 
-   } else if (tries > 1) {
+   } else if (tries == 1 && answer != word) {
+    tries = 3
+    streak = 0
+    console.log("The player's answer was wrong. Game Over.")
+
+    feedbackField.innerHTML = `<h4 style="color: red;">Hävisit. Oikea sana oli <i>${word}</i></h4>`
+    document.getElementById("Form").reset();
+    displayShuffledWord(words)
+   } else if (tries > 0 && answer != word) {
     tries -= 1;
     console.log("The player's answer was wrong. Tries left: " + tries);
-   } else {
-    tries -= 1
-    console.log("The player's answer was wrong. " + tries + " tries left. Game Over.")
-   }
+
+    feedbackField.innerHTML = `<h4 style="color: red;">Väärin. Yrityksiä jäljellä: ${tries}</h4>`
+   } else feedbackField.innerHTML = `<h4>Error: tries ${tries}, streak ${streak}, word ${word}, answer ${answer}</h4>`
+}
+
+function displayHint(clear = false) {
+    hintContainer = document.getElementById("Hint")
+
+    if (clear == true) {
+        hintContainer.innerHTML = ` `
+    } else {
+        hintContainer.innerHTML = `<span>${hint}<span>`
+    }
 }

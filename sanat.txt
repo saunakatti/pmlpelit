@@ -1,7 +1,21 @@
-Puutarhakatu:Katu Turussa.
-Tuomiokirkko:Suomen vanhin kirkko ehkä.
-Kauppatori:Markkinapaikka.
-Jouko Kauppinen:Reksi.
-Ylioppilastutkintolautakunta:Tää tekee kokeita.
-Abitti:Jonnet ei muista niit tikkui.
-Sensori:Nää tarkistaa YO-kokeet.
+Puutarhakatu: Katu Turussa.
+Tuomiokirkko: Vanha kirkko.
+Kauppatori: Markkinapaikka.
+Jouko Kauppinen: Kova jehu.
+Ylioppilastutkintolautakunta: YTL.
+Abitti: Ne tikut oli iha hauskoi.
+Sensori: Nää tarkistaa YO-kokeet.
+Collabora Online: Niinku LibreOffice mut aina rikki.
+Pulu: Se lentää.
+PML-merch: Huppareita ja jotai.
+Kaarea: Ruokapalvelu.
+Riisipuuro: Joulunajan spessuruoka.
+Hernekeitto: Perinteisesti torstaisin.
+Abicus: Funktiolaskin.
+Hansakortteli: Tääl voi sadepäivänäki kiertää kauppoi.
+Vernier: Tällä tehää kuvaajia taulukkotiedoista.
+CAS-laskin: Tällä voi ratkasta yhtälöi.
+MAOL-taulukot: Pelastaa kokeessa.
+Koeviikko: Periodin päätteeksi.
+Lukiolaiskannettava: Pitkä nimitys lukioläppärille.
+Käytäväpiano: Propsit niille ketkä aina soittaa näitä.
