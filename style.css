@@ -37,15 +37,32 @@ body {
     color: var(--color-text);
 }
 
-button {
+button, .button {
     background-color: var(--color-blue2);
     border-radius: 10px;
     border: 1px solid var(--color-blue);
     color: var(--color-text);
+    text-decoration: none;
 }
 
-button:hover {
+button:hover, .button:hover {
     background-color: var(--color-blue);
+}
+
+.section {
+    background-color: var(--color-blue2);
+    padding: 1em;
+    border-radius: 10px;
+    border: 2px solid var(--color-blue);
+}
+
+.section h2, .section h4 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: var(--color-text);
 }
 
 div#ShuffledWord  {
@@ -122,13 +139,24 @@ button#HintButton {
     color: var(--color-graytext);
 }
 
-button#theme-switch {
+button#theme-switch, a.homeButton {
     padding: 0.5em 0.6em;
     font-size: 1em;
     float: right;
+    margin-left: 1em;
 }
 
+#theme-switch span:first-child {
+    display: none;
+}
 
+.darkmode #theme-switch span:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch span:first-child {
+    display: block;
+}
 
 @media(max-width: 600px) {
     div.content {

@@ -1,44 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PML-pelit ⦁ Sanasotku - Kehitysversio</title>
+    <title>PML-pelit ⦁ Kotisivu</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="pmlpelit2.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="sanapeli.js"></script>
 </head>
 <body>
     <div class="content">
-        <button id="theme-switch"></button>
-        <h1>PML-Sanasotku</h1>
-        <h2>Ratkaise tavalla tai toisella lukioon liittyvä sotkettu sana.</h2>
-        <p>
-            Syötä vastaus painamalla rivinvaihto-painiketta (Enter). Jos pelaat puhelimella, 
-            pitkät sanat saa näkyviin sanaa vetämällä. Välilyönnit ovat alaviivoja (_) sotketussa sanassa, 
-            kirjoita ne kuitenkin välilyönteinä. Kaikkien sanojen alkukirjaimet ovat isolla pelin 
-            helpottamiseksi.
-        </p>
-        <p>
-        </p>
-        <div id="ShuffledWord"></div>
-        <form action="" id="Form" onsubmit="submitAnswer(event)">
-            <label for="Answer" style="display: none;">Vastaus</label>
-            <input type="text" id="Answer" name="answer" placeholder="Syötä vastauksesi tähän">
-        </form>
-        <div id="HintLine">
-            <button onclick="displayHint()" id="HintButton">Vinkki</button>
-            <div id="Hint"></div>
+        <button id="theme-switch">
+            <span>☀️</span>
+            <span>🌕</span>
+        </button>
+        <h1>PML-Pelit</h1>
+        <div class="section">
+            <h2><a href="sanasotku.html">PML-Sanasotku</a></h2>
+            <h4>Ratkaise oikea sekoitettu sana.</h4>
         </div>
 
-        <div id="Feedback"></div>
-        <div id="ProjectInfo">
-            <div id="WordsAmount">Nykyisiä sanoja: </div>
-            <a id="WordListLink" target="_blank" href="sanat.txt">Lista sanoista</a>
-        </div>
         <p class="credit">
-            Sanaideat yms. : &nbsp; <a href="mailto:palaute.earthling100@passinbox.com" target="_blank">palaute.earthling100@passinbox.com</a> tai GitHub <br>
-            (sanaideoista myös vinkki) <br><br>
+            Palaute : &nbsp; <a href="mailto:palaute.earthling100@passinbox.com" target="_blank">palaute.earthling100@passinbox.com</a> tai GitHub <br>
+            <br>
 
             Kehitysversio &nbsp; – &nbsp; Onni V &nbsp;2026 &nbsp; – &nbsp;
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/saunakatti/pmlpelit">GitHub</a><br>
