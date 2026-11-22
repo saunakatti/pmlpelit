@@ -55,10 +55,12 @@ function displayShuffledWord(words) {
 
     shuffleArray(wordArray);
 
+    // for every character, add a new seperate span
     for (let i = 0; i < wordArray.length; i++) {
         wordDisplay.innerHTML += `<span id=WordCharacter>${wordArray[i]}</span>`
     }
 
+    // select spaces and replace them with underline
     wordChars = document.querySelectorAll("#WordCharacter")
     wordChars.forEach(element => {
         if (element.innerHTML == " ") {

@@ -20,3 +20,4 @@ Koeviikko: Periodin päätteeksi.
 Lukiolaiskannettava: Pitkä nimitys lukioläppärille.
 Käytäväpiano: Propsit niille ketkä aina soittaa näitä.
 GeoGebra: Tällä piirretään funktioiden kuvaajii.
+OPKH:n verkkosivut: Vähä vanhentuneet.
