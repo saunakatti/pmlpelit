@@ -1,7 +1,7 @@
 Puutarhakatu: Katu Turussa.
 Tuomiokirkko: Vanha kirkko.
 Kauppatori: Markkinapaikka.
-Jouko Kauppinen: Kova jehu.
+Jouko Kauppinen: Iso jehu.
 Ylioppilastutkintolautakunta: YTL.
 Abitti: Ne tikut oli iha hauskoi.
 Sensori: Nää tarkistaa YO-kokeet.
@@ -19,3 +19,4 @@ MAOL-taulukot: Pelastaa kokeessa.
 Koeviikko: Periodin päätteeksi.
 Lukiolaiskannettava: Pitkä nimitys lukioläppärille.
 Käytäväpiano: Propsit niille ketkä aina soittaa näitä.
+GeoGebra: Tällä piirretään funktioiden kuvaajii.

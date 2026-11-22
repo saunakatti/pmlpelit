@@ -1,6 +1,9 @@
 // Sanasotkupeli (mixed words game)
 // Made by Onni V (Saunakatti), no AI was used
 
+// Define amount of diff words
+var wordsAmount = ""
+
 // Define array of words globally
 var words = ""
 
@@ -10,6 +13,11 @@ fetch("./sanat.txt")
     .then(wordList => {
         words = wordList.split('\n');
         displayShuffledWord(words);
+
+        wordsAmount = words.length
+
+        document.getElementById("WordsAmount").innerHTML += `<b>&nbsp; ${wordsAmount}</b>`
+
 
         // Prevent page from reloading when form is submitted
         var form = document.getElementById("Form");
