@@ -162,6 +162,8 @@ button#theme-switch, a.homeButton {
     div.content {
         width: 100%;
         padding: 1.5em;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     div#ShuffledWord {
